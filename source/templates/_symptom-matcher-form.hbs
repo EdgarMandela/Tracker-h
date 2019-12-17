@@ -1,0 +1,18 @@
+<form action="#" class="symptom-matcher">
+    <h3>You said: "{{params.parseData.orth}}"</h3>
+    <fieldset>
+        <legend>Check the symptoms that match your entry above:</legend>
+        <ul id="errors" style="display: none;"></ul>
+        {{#each data}}
+            <label for="{{this.id}}"><input type="checkbox" name="symptom" id="{{this.id}}" class="symptom-group filled-in indigo darken-4" data-name="{{this.label}}"><span>{{this.label}}</span></label><br>
+        {{else}}
+            <p class="empty">Nothing found.</p>
+        {{/each}}
+        
+        <div class="btn-container right">
+            <button type="submit" id="submit-symptom-matcher" data-clickable="submitSymptomMatcher" class="btn btn-large">Continue</button>
+            <button type="reset" id="symptoms-try-again" data-clickable="symptomsTryAgain" class="btn btn-large negative">That's not what I meant. Try again.</button><br>
+        </div>
+        
+    </fieldset>
+</form>

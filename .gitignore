@@ -1,0 +1,11 @@
+## Planning Directory
+planning
+
+## Public Directory (only need version control for source directory)
+public
+
+## Node Modules Directory
+node_modules
+
+## Compiled Handlebars Templates
+source/js/templates

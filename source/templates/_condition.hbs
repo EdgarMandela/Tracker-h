@@ -1,0 +1,9 @@
+<div class="condition {{this.prevalence}} {{this.acuteness}} {{this.severity}} {{this.triage_level}} {{#each categories}}{{this}} {{/each}} card-panel"
+    id="{{this.id}}"
+    <div class="card-content">
+        <span class="card-title">{{this.common_name}}</span>
+        <p class="info"><span class="label">Prevalence: </span>{{this.prevalence}}</p>
+        <p class="info"><span class="label">Severity: </span>{{this.severity}}</p>
+        <p><span class="label">Recommendation: </span>{{this.extras.hint}}</p>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<form action="#" id="diagnosis-question" data-type="single">
+    <fieldset>
+        <legend>{{text}}</legend>
+        <ul id="errors" style="display: none;"></ul>
+        {{#each items}}
+            {{#each choices}}
+                <label for="{{this.id}}">
+                    <input type="radio" name="choice" id="{{this.id}}" value ="{{this.id}}" required class="choice-group with-gap">
+                    <span>{{this.label}}</span>
+                </label><br>
+            {{/each}}
+        {{/each}}
+        <button type="submit" id="submit-question-answer" data-clickable="submitQuestionAnswer" class="btn right">Continue</button>
+    </fieldset>
+</form>

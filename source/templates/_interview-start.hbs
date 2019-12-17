@@ -1,0 +1,17 @@
+<h2>Great, let's get started!</h2>
+
+<form class="interview-start" action="#" method="post">
+  <fieldset>
+    <legend>Tell Me About Yourself</legend>
+    <ul id="errors" style="display: none;"></ul>
+    <label for="first-name">What can I call you?
+    <input type="text" name="first-name" id="first-name"placeholder="First Name" minlength=2 required></label>
+    
+    <label for="age">How old are you?
+    <input type="number" name="age" required></label>
+    <label for="gender">What is your sex?</label><br>
+    <label for="male"><input type="radio" name="gender" value="male" id="male" class="with-gap" required><span>Male</span></label>
+    <label for="female"><input type="radio" name="gender" value="female" id="female" class="with-gap" required><span>Female</span></label><br>
+    <button type="submit" name="submit" id="submit-interview-start" data-clickable="submitInterviewStart" class="btn btn-large right">Continue</button>
+  </fieldset>
+</form>
